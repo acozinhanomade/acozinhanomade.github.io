@@ -1,0 +1,47 @@
+# Site
+title: "Cozinha Nômade"
+
+# URL
+url: ''
+baseurl: ''
+permalink: :title/
+include: ['_pages']
+collections:
+  potes:
+    output: true
+    permalink: /:collection/:path/
+
+# Build settings
+markdown: kramdown
+port: 6543
+future: false
+
+# Defaults
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  -
+    scope:
+      path: ""
+      type: "potes"
+    values:
+      layout: "page"
+
+# Data
+social:
+  facebook: ""
+  instagram: "https://www.instagram.com/silo.arte.e.latitude.rural"
+  github: ""
+  twitter: "https://twitter.com/SiloLatitude"
+  youtube: ""
+  vimeo: ""
+  soundcloud: ""
+  tumblr: ""
+  pinterest: ""
+  envelope-o: "mailto:resilience.residence@silo.org.br"
+twitter_user: "SiloLatitude"
+email: "resilience.residence@silo.org.br"

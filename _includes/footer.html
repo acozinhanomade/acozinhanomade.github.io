@@ -1,0 +1,16 @@
+<div class="footer">
+  <div class="footer-line">{{ site.title }}</div>
+  <a class="footer-line" href="{{ site.social.envelope-o }}" target="_blank">{{ site.email }}</a>
+  <div class="footer-line">
+    {% include social-icons.html %}
+  </div>
+</div>
+
+{% if page.permalink == '/' %}
+  <div class="footer">
+    <div class="footer-line">Apoio/Support:</div>
+    <a href="https://silo.org.br/" target="_blank">
+      <div class="footer-line silo-logo" style="background-image: url('{{ site.baseurl }}/media/images/logos/silo.svg');"></div>
+    </a>
+  </div>
+{% endif %}

@@ -1,0 +1,17 @@
+processos:
+  fermentação láctea:
+    img: "/media/favicons/favicon.png"
+    txt: "Forma de fermentar coisas que vem do leite"
+
+ingredientes:
+  manga:
+    img: "/media/favicons/favicon.png"
+    txt: "Fruta amarela"
+  hibísco:
+    img: "/media/favicons/favicon.png"
+    txt: "Flor vermelha"
+
+categorias:
+  leguminosas:
+    img: "/media/favicons/favicon.png"
+    txt: "Plantas com sementes cobertas"

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% include head.html %}
+    {% include meta.html %}
+  </head>
+  <body>
+    <div class="main-div">
+      <div class="page-title">{{ page_title }}</div>
+      <div class="page-content">
+        {% assign groups = 'processos,categorias,ingredientes' | split: ',' %}
+        {% for g in groups %}
+          {% for item in page[g] %}
+            {% if site.data.glossario[g][item] %}
+              <div>
+                <b>{{ item }}</b><br>
+                {{ site.data.glossario[g][item].img }}<br>
+                {{ site.data.glossario[g][item].txt }}
+              </div>
+            {% endif %}
+          {% endfor %}
+        {% endfor %}
+        {% include share.html %}
+      </div>
+    </div>
+    {% include footer.html %}
+  </body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% include head.html %}
+    {% include meta.html %}
+  </head>
+  <body>
+    <div class="main-div">
+      <div class="page-title">{{ page_title }}</div>
+      <div class="page-content">
+        {{ content }}
+        {% if page.swipebox %}
+          {% include swipebox.html prefix=page.swipebox %}
+        {% endif %}
+        {% include share.html %}
+      </div>
+    </div>
+    {% include footer.html %}
+  </body>
+</html>
