@@ -211,6 +211,12 @@ a {
   }
 }
 
+.content-mapa, .content-ingredientes, .content-receita {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height $TRANSITION-PERIOD-HOME linear;
+}
+
 .footer {
   margin: 0 auto;
   box-sizing: border-box;

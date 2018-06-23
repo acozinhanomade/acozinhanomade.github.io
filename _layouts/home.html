@@ -3,12 +3,12 @@
   <head>
     {% include head.html %}
     {% include meta.html %}
-    <script src="{{ site.baseurl }}/js/home.js"></script>
   </head>
   <body>
     <div class="main-div home-main-div">
       <div class="home-title">{{ site.title }}</div>
-      <div class="home-jar-container">
+
+      <div class="home-jar-container" id="jar-menu-anchor">
         {% for p in site.potes %}
           <div class="jar-overlay" data-slug="{{ p.slug }}">
             <div class="jar-item">
@@ -24,7 +24,7 @@
         {% endfor %}
       </div>
 
-      <div class="home-jar-navigation">
+      <div class="home-jar-navigation" id="jar-submenu-anchor">
         <div class="jar-item" id="jar-ingredientes">
           <img src="{{ site.baseurl }}/media/icons/kombucha/ingredientes.png">
         </div>
@@ -36,7 +36,19 @@
           <img src="{{ site.baseurl }}/media/icons/kombucha/mapa.png">
         </div>
       </div>
+
+      <div class="home-content">
+        {% for p in site.potes %}
+          <div class="content-ingredientes" data-slug="{{ p.slug }}">
+            <div class="content-title">Ingredientes: {{ p.slug }}</div>
+            {% include ingredientes.html page=p %}
+          </div>
+          {{ p.content }}
+        {% endfor %}
+      </div>
     </div>
     {% include footer.html %}
   </body>
+  <script src="{{ site.baseurl }}/js/smooth-scroll.js"></script>
+  <script src="{{ site.baseurl }}/js/home.js"></script>
 </html>

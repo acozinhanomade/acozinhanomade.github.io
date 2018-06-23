@@ -1,19 +1,14 @@
 ---
 title: Fruta
 cover: /media/icons/jar.png
-cover_ingredientes: /media/icons/fruta/ingredientes.png
-cover_mapa: /media/icons/fruta/mapa.png
 ingredientes:
   - manga
   - limão
 categorias:
   - fruta
 ---
-<div class="content-ingredientes" markdown="1">
-  {% include ingredientes.html %}
-</div>
-
-<div class="content-receita" markdown="1">
+<div class="content-receita" markdown="1" data-slug="{{ page.slug }}">
+  <div class="content-title">Receita: {{ page.slug }}</div>
   Para fazer esse pote:
 
   - coloque
@@ -21,7 +16,8 @@ categorias:
   - mexa
 </div>
 
-<div class="content-mapa" markdown="1">
+<div class="content-mapa" markdown="1" data-slug="{{ page.slug }}">
+  <div class="content-title">Mapa: {{ page.slug }}</div>
   Adicionar uma imagem AQUI.
   
   Adicionar um video aqui TAMBÉM.
