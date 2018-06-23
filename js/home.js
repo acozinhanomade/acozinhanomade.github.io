@@ -79,15 +79,19 @@ function setNavigation(slug) {
     };
 
     let ingredientesImg = ingredientes.getElementsByTagName('img')[0];
+    let receitaImg = receita.getElementsByTagName('img')[0];
     let mapaImg = mapa.getElementsByTagName('img')[0];
 
     let ingredientesImgUrl = ingredientesImg.getAttribute('src');
+    let receitaImgUrl = receitaImg.getAttribute('src');
     let mapaImgUrl = mapaImg.getAttribute('src');
 
     ingredientesImgUrl = ingredientesImgUrl.replace(/\/[a-zA-Z0-9]+\/ingredientes/, '/'+slug+'/ingredientes');
+    receitaImgUrl = receitaImgUrl.replace(/\/[a-zA-Z0-9]+\/receita/, '/'+slug+'/receita');
     mapaImgUrl = mapaImgUrl.replace(/\/[a-zA-Z0-9]+\/mapa/, '/'+slug+'/mapa');
 
     ingredientesImg.setAttribute('src', ingredientesImgUrl);
+    receitaImg.setAttribute('src', receitaImgUrl);
     mapaImg.setAttribute('src', mapaImgUrl);
 
     document.getElementById('jar-title').innerHTML = slug;
