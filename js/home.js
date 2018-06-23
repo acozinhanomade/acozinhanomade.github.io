@@ -1,7 +1,36 @@
 var menuFadeInDelay = 0;
 var contentFadeInDelay = 0;
 
-window.onload = setClicks;
+window.onload = function() {
+  setClicks();
+  parseUrl();
+}
+
+function parseUrl() {
+  if(location.href.includes('/#/')) {
+    let myRegexp = /\/#\/([a-zA-Z]*)-?([a-zA-Z]*)/g;
+    let anchors = myRegexp.exec(location.href);
+    let slug = anchors[1];
+    let type = anchors[2];
+    let pote = document.querySelectorAll('[data-slug="' + slug + '"]')[0];
+    let content = document.getElementById('jar-' + type);
+    if (pote) {
+      pote.click();
+    }
+    if(content) {
+      setTimeout(function(){content.click()}, 200);
+    }
+  }
+}
+
+function updateShareUrls() {
+  let shareElement = document.getElementsByClassName('share-url');
+  for(let i=0; i<shareElement.length; i++) {
+    let shareUrl = shareElement[i].getAttribute('href').replace(/=.+/g, '=');
+    let pageUrl = location.href;
+    shareElement[i].setAttribute('href', shareUrl + pageUrl);
+  }
+}
 
 function clearSelectedJar() {
   let potes = document.getElementsByClassName('jar-overlay');
@@ -15,6 +44,9 @@ function setClicks() {
   for(let i=0; i<potes.length; i++) {
     let mSlug = potes[i].getAttribute('data-slug');
     potes[i].onclick = function() {
+      let url = location.href.replace(/\/#\/.+/g,'');
+      location.href = url + '#/' + mSlug;
+      updateShareUrls(mSlug, '');
       hideAllContent();
       clearSelectedJar();
       this.classList.add('jar-selected');
@@ -32,12 +64,18 @@ function setNavigation(slug) {
 
     ingredientes.onclick = function() {
       showContent(slug, 'ingredientes');
+      location.href = location.href.replace(/-.+/, '') + '-ingredientes';
+      updateShareUrls();
     };
     receita.onclick = function() {
       showContent(slug, 'receita');
+      location.href = location.href.replace(/-.+/, '') + '-receita';
+      updateShareUrls();
     };
     mapa.onclick = function() {
       showContent(slug, 'mapa');
+      location.href = location.href.replace(/-.+/, '') + '-mapa';
+      updateShareUrls();
     };
 
     let ingredientesImg = ingredientes.getElementsByTagName('img')[0];
