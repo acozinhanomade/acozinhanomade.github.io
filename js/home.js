@@ -44,8 +44,8 @@ function setClicks() {
   for(let i=0; i<potes.length; i++) {
     let mSlug = potes[i].getAttribute('data-slug');
     potes[i].onclick = function() {
-      let url = location.href.replace(/\/#\/.+/g,'');
-      location.href = url + '#/' + mSlug;
+      let url = location.href.replace(/\/#\/.+/g,'').replace(/\/$/, '');
+      location.href = url + '/#/' + mSlug;
       updateShareUrls(mSlug, '');
       hideAllContent();
       clearSelectedJar();
