@@ -6,7 +6,7 @@ processos:
 ingredientes:
   manga:
     img: "/media/icons/CIP/manga.png"
-    txt: "Fruta amarela"
+    txt: "<a href='//wikipedia.org'>Fruta amarela</a>"
   hibísco:
     img: "/media/icons/CIP/hibisco.png"
     txt: "Flor vermelha"

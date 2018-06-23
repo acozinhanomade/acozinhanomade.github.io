@@ -7,9 +7,7 @@ baseurl: ''
 permalink: :title/
 include: ['_pages']
 collections:
-  potes:
-    output: true
-    permalink: /:path/
+  - potes
 
 # Build settings
 markdown: kramdown
@@ -22,12 +20,6 @@ defaults:
     scope:
       path: ""
       type: "pages"
-    values:
-      layout: "page"
-  -
-    scope:
-      path: ""
-      type: "potes"
     values:
       layout: "page"
 

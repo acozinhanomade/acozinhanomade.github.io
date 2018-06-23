@@ -11,15 +11,12 @@
       <div class="home-jar-container" id="jar-menu-anchor">
         {% for p in site.potes %}
           <div class="jar-overlay" data-slug="{{ p.slug }}">
-            <div class="jar-item">
-              <img src="{{ site.baseurl }}/media/icons/{{ p.slug }}/ingredientes.png">
-            </div>
-            <div class="jar-item">
-              <img src="{{ site.baseurl }}/media/icons/{{ p.slug }}/receita.png">
-            </div>
-            <div class="jar-item">
-              <img src="{{ site.baseurl }}/media/icons/{{ p.slug }}/mapa.png">
-            </div>
+            {% assign groups = 'ingredientes,receita,mapa' | split: ',' %}
+            {% for g in groups %}
+              <div class="jar-item">
+                <img src="{{ site.baseurl }}/media/icons/{{ p.slug }}/{{ g }}.png">
+              </div>
+            {% endfor %}
           </div>
         {% endfor %}
       </div>
@@ -40,7 +37,6 @@
       <div class="home-content">
         {% for p in site.potes %}
           <div class="content-ingredientes" data-slug="{{ p.slug }}">
-            <div class="content-title">Ingredientes: {{ p.slug }}</div>
             {% include ingredientes.html page=p %}
           </div>
           {{ p.content }}

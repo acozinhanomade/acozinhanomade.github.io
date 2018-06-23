@@ -1,4 +1,8 @@
 {% assign groups = 'processos,categorias,ingredientes' | split: ',' %}
+{% if include.page.ingredientes %}
+  <div class="content-title">Ingredientes: {{ include.page.slug }}</div>
+{% endif %}
+
 {% for g in groups %}
 {% for item in include.page[g] %}
 {% if site.data.glossario[g][item] %}
