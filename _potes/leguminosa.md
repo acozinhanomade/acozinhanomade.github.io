@@ -1,6 +1,5 @@
 ---
 title: Leguminosa
-cover: /media/icons/jar.png
 ingredientes:
   - manga
   - limão

@@ -1,6 +1,5 @@
 ---
 title: Lácteos
-cover: /media/icons/jar.png
 ingredientes:
   - manga
   - limão

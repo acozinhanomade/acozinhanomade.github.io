@@ -1,6 +1,5 @@
 ---
 title: Kombucha
-cover: /media/icons/jar.png
 ingredientes:
   - manga
   - limão

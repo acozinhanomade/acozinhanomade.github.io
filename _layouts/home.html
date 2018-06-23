@@ -15,7 +15,7 @@
               <img src="{{ site.baseurl }}/media/icons/{{ p.slug }}/ingredientes.png">
             </div>
             <div class="jar-item">
-              <img src="{{ site.baseurl }}{{ p.cover }}">
+              <img src="{{ site.baseurl }}/media/icons/jar.png">
             </div>
             <div class="jar-item">
               <img src="{{ site.baseurl }}/media/icons/{{ p.slug }}/mapa.png">
@@ -45,6 +45,7 @@
           </div>
           {{ p.content }}
         {% endfor %}
+        {% include share.html %}
       </div>
     </div>
     {% include footer.html %}

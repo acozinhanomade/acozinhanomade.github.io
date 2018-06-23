@@ -1,10 +1,6 @@
 {% assign description = page.content | strip_html | truncatewords: 25 %}
 
-{% assign basepath = site.url | append: site.baseurl %}
-{% assign coverimage = basepath | append: "/media/favicons/favicon.png" %}
-{% if page.cover %}
-  {% assign coverimage = basepath | append: "/" | append: page.cover %}
-{% endif %}
+{% assign coverimage = site.url | append: site.baseurl | append: "/media/icons/jar.png" %}
 
 <meta name="twitter:title" content="{{ page_title }}">
 <meta name="twitter:image" content="{{ coverimage }}">

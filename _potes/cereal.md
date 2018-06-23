@@ -1,6 +1,5 @@
 ---
 title: Cereal
-cover: /media/icons/jar.png
 ingredientes:
   - manga
   - limão

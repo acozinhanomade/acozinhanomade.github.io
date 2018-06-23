@@ -1,6 +1,5 @@
 ---
 title: Conservas
-cover: /media/icons/jar.png
 ingredientes:
   - manga
   - limão
