@@ -1,17 +1,26 @@
 processos:
   fermentação láctea:
-    img: "/media/favicons/favicon.png"
+    img: "/media/icons/CIP/fermentacao_lactea.png"
     txt: "Forma de fermentar coisas que vem do leite"
 
 ingredientes:
   manga:
-    img: "/media/favicons/favicon.png"
+    img: "/media/icons/CIP/manga.png"
     txt: "Fruta amarela"
   hibísco:
-    img: "/media/favicons/favicon.png"
+    img: "/media/icons/CIP/hibisco.png"
     txt: "Flor vermelha"
+  limão:
+    img: "/media/icons/CIP/limao.png"
+    txt: "Fruta cítrica"
+  chá:
+    img: "/media/icons/CIP/cha.png"
+    txt: "Folhas florais"
 
 categorias:
   leguminosas:
-    img: "/media/favicons/favicon.png"
+    img: "/media/icons/CIP/leguminosas.png"
     txt: "Plantas com sementes cobertas"
+  cereal:
+    img: "/media/icons/CIP/cereal.png"
+    txt: "Grãos e etc"

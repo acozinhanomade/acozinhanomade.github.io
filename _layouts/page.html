@@ -6,7 +6,8 @@
   </head>
   <body>
     <div class="main-div">
-      <div class="page-title">{{ page_title }}</div>
+      <a href="{{ site.baseurl }}/"><div class="home-title">{{ site.title }}</div></a>
+      <div class="page-title">{{ page.title }}</div>
       <div class="page-content">
         {{ content }}
         {% if page.swipebox %}

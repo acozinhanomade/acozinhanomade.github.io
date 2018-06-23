@@ -13,7 +13,6 @@ $TEXT-SIZE-MOBILE: 0.8rem;
 $LINK-SIZE-MOBILE: 1rem;
 
 $BACKGROUND: rgba(255,255,255,1);
-$TEXT-BACKGROUND: rgba(255,255,255,1);
 
 $TEXT-COLOR: rgba(0,0,0,1);
 
@@ -28,15 +27,13 @@ $DESKTOP-WIDTH-SITE: 1280px;
 $COLUMN-WIDTH: $DESKTOP-WIDTH-SITE/4;
 
 $TRANSITION-PERIOD: 0.1s;
+$TRANSITION-PERIOD-ICON: 0.3s;
+$TRANSITION-PERIOD-HOME: 0.5s;
 $RESPONSIVE-SPACING: 2vw;
 $MENU-ITEM-SPACING: 4px;
-$MENU-WIDTH: 280px;
-
-$two_columns: 2 * $COLUMN-WIDTH;
-$three_columns: 3 * $COLUMN-WIDTH;
 
 @mixin media-query($canvas) {
   @if $canvas == DESKTOP {
-   @media only screen and (min-width: $two_columns) { @content; }
+   @media only screen and (min-width: 2 * $COLUMN-WIDTH) { @content; }
   }
 }

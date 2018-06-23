@@ -9,7 +9,7 @@ include: ['_pages']
 collections:
   potes:
     output: true
-    permalink: /:collection/:path/
+    permalink: /:path/
 
 # Build settings
 markdown: kramdown
@@ -34,14 +34,14 @@ defaults:
 # Data
 social:
   facebook: ""
-  instagram: "https://www.instagram.com/silo.arte.e.latitude.rural"
+  instagram: "https://www.instagram.com/acozinhanomade"
   github: ""
-  twitter: "https://twitter.com/SiloLatitude"
+  twitter: ""
   youtube: ""
   vimeo: ""
   soundcloud: ""
   tumblr: ""
   pinterest: ""
-  envelope-o: "mailto:resilience.residence@silo.org.br"
+  envelope-o: "mailto:acozinhanomade@gmail.com"
 twitter_user: "SiloLatitude"
-email: "resilience.residence@silo.org.br"
+email: "acozinhanomade@gmail.com"

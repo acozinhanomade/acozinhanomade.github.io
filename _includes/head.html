@@ -1,8 +1,4 @@
 {% assign page_title = page.title %}
-{% if page.collection %}
-  {% assign url = page.url | split: '/' %}
-  {% assign page_title = url[2] | replace:'-',' ' | append: ': ' | append: page.title %}
-{% endif %}
 
 <title>{{ page_title }}</title>
 

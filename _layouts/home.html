@@ -3,11 +3,39 @@
   <head>
     {% include head.html %}
     {% include meta.html %}
+    <script src="{{ site.baseurl }}/js/home.js"></script>
   </head>
   <body>
-    <div class="main-div">
+    <div class="main-div home-main-div">
       <div class="home-title">{{ site.title }}</div>
-      <div class="home-jar-container"></div>
+      <div class="home-jar-container">
+        {% for p in site.potes %}
+          <div class="jar-overlay" data-slug="{{ p.slug }}">
+            <div class="jar-item">
+              <img src="{{ site.baseurl }}/media/icons/{{ p.slug }}/ingredientes.png">
+            </div>
+            <div class="jar-item">
+              <img src="{{ site.baseurl }}{{ p.cover }}">
+            </div>
+            <div class="jar-item">
+              <img src="{{ site.baseurl }}/media/icons/{{ p.slug }}/mapa.png">
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+
+      <div class="home-jar-navigation">
+        <a href="{{ site.baseurl }}/kombucha/ingredientes/" id="jar-ingredientes" class="jar-item">
+          <img src="{{ site.baseurl }}/media/icons/kombucha/ingredientes.png">
+        </a>
+        <a href="{{ site.baseurl }}/kombucha/" id="jar-receita" class="jar-item">
+          <img src="{{ site.baseurl }}/media/icons/jar.png">
+          <div class="jar-navigation-title" id="jar-title"></div>
+        </a>
+        <a href="{{ site.baseurl }}/kombucha/mapa/" id="jar-mapa" class="jar-item">
+          <img src="{{ site.baseurl }}/media/icons/kombucha/mapa.png">
+        </a>
+      </div>
     </div>
     {% include footer.html %}
   </body>
