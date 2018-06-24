@@ -18,7 +18,7 @@ future: false
 defaults:
   -
     scope:
-      path: ""
+      path: "_pages"
       type: "pages"
     values:
       layout: "page"
