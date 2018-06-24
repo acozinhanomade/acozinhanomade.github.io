@@ -1,0 +1,104 @@
+---
+---
+
+let ingredients2recipes = {};
+let recipes2ingredients = {};
+let recipeUrls = {};
+let buttons;
+
+window.addEventListener('load', function() {
+  buttons = document.getElementsByClassName('recipe-search-button');
+  setIngredientSearchClicks();
+  disableButtons();
+});
+
+{% assign groups = 'processos,categorias,ingredientes' | split: ',' %}
+  
+{% for p in site.potes %}
+  recipeUrls['{{ p.title }}'] = '{{ site.baseurl}}/#/{{ p.slug }}-receita';
+  {% for g in groups %}
+    {% for i in p[g] %}
+      if(!('{{ i }}' in ingredients2recipes)) {
+        ingredients2recipes['{{ i }}'] = [];
+      }
+      if(!('{{ p.title }}' in recipes2ingredients)) {
+        recipes2ingredients['{{ p.title }}'] = [];
+      }
+      ingredients2recipes['{{ i }}'].push('{{ p.title }}');
+      recipes2ingredients['{{ p.title }}'].push('{{ i }}');
+    {% endfor %}
+  {% endfor %}
+{% endfor %}
+
+function setIngredientSearchClicks() {
+  for(let i=0; i<buttons.length; i++) {
+    buttons[i].onclick = function() {
+      setTimeout(disableButtons, 10);
+    }
+  }
+}
+
+function getSearchParams() {
+  let params = [];
+  for(let i=0; i<buttons.length; i++) {
+    let b = buttons[i];
+    if(document.getElementById(b.getAttribute('for')).checked) {
+      params.push(b.getAttribute('data-name'));
+    }
+  }
+  return params;
+}
+
+function getRecipes() {
+  let params = getSearchParams();
+
+  let recipeResults = document.getElementsByClassName('recipe-search-results')[0];
+  recipeResults.innerHTML = '';
+
+  if (params.length === 0) return [];
+
+  let recipeIntersection = ingredients2recipes[params[0]].slice();
+
+  for(let i=1; i<params.length; i++) {
+    recipeIntersection = recipeIntersection.filter(function(recipe) {
+      return (-1 !== ingredients2recipes[params[i]].indexOf(recipe));
+    });
+  }
+
+  for(let i=0; i<recipeIntersection.length; i++) {
+    let div = document.createElement('a');
+    div.classList.add('recipe-search-result-item');
+    div.setAttribute('href', recipeUrls[recipeIntersection[i]]);
+    div.innerHTML = recipeIntersection[i];
+    recipeResults.appendChild(div);
+  }
+
+  return recipeIntersection;
+}
+
+function disableButtons() {
+  let recipes = getRecipes();
+  let ingredientUnion = {};
+
+  for(let i=0; i<recipes.length; i++) {
+    let ingredients = recipes2ingredients[recipes[i]];
+    for(let j=0; j<ingredients.length; j++){
+      ingredientUnion[ingredients[j]] = ''; 
+    }
+  }
+
+  for(let i=0; i<buttons.length; i++) {
+    let b = buttons[i];
+    let buttonIngredient = b.getAttribute('data-name');
+
+    if((buttonIngredient in ingredients2recipes)) {
+      b.classList.remove('recipe-search-button-disabled');
+    } else {
+      b.classList.add('recipe-search-button-disabled');
+    }
+
+    if(!(buttonIngredient in ingredientUnion) && (recipes.length !== 0)) {
+      b.classList.add('recipe-search-button-disabled');
+    }
+  }
+}

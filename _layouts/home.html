@@ -6,7 +6,7 @@
   </head>
   <body>
     <div class="main-div home-main-div">
-      <div class="home-title">{{ site.title }}</div>
+      <a href="{{ site.baseurl }}/"><div class="home-title">{{ site.title }}</div></a>
 
       <div class="home-jar-container" id="jar-menu-anchor">
         {% for p in site.potes %}
@@ -43,9 +43,37 @@
         {% endfor %}
         {% include share.html %}
       </div>
+
+      <div class="home-map-container home-section">
+        <div>Mapas</div>
+        <div class="home-map-image home-section-image"></div>
+      </div>
+
+      <div class="recipe-search-container home-section">
+        <div>Receitas Adicionais</div>
+        <div class="recipe-search-button-container">
+          {% assign groups = 'processos,categorias,ingredientes' | split: ',' %}
+          {% for g in groups %}
+            <div class="recipe-search-button-group">
+              {% for item in site.data.glossario[g] %}
+                <input type="checkbox" class="hidden-checkbox"
+                       id="recipe-search-{{ g }}-{{ forloop.index }}">
+                <label class="recipe-search-button"
+                       for="recipe-search-{{ g }}-{{ forloop.index }}"
+                       data-name="{{ item[0] }}">
+                  {{ item[0] }}
+                </label>
+              {% endfor %}
+            </div>
+          {% endfor %}
+        </div>
+        <div class="recipe-search-results">
+        </div>
+      </div>
     </div>
     {% include footer.html %}
   </body>
   <script src="{{ site.baseurl }}/js/smooth-scroll.js"></script>
-  <script src="{{ site.baseurl }}/js/home.js"></script>
+  <script src="{{ site.baseurl }}/js/home-navigation.js"></script>
+  <script src="{{ site.baseurl }}/js/recipe-search.js"></script>
 </html>

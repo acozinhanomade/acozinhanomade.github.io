@@ -1,10 +1,10 @@
 var menuFadeInDelay = 0;
 var contentFadeInDelay = 0;
 
-window.onload = function() {
+window.addEventListener('load', function() {
   setClicks();
   parseUrl();
-}
+});
 
 function parseUrl() {
   if(location.href.includes('/#/')) {

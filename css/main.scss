@@ -116,10 +116,7 @@ a {
 
 .home-main-div {
   .home-title {
-    font: 900 2*$TITLE-SIZE $FONT-TITLE;
-    @include media-query(DESKTOP) {
-      font-size: 8vw;
-    }
+    font: 900 8vw $FONT-TITLE;
   }
 
   .jar-item {
@@ -139,6 +136,7 @@ a {
   justify-content: center;
   width: 100%;
   padding-bottom: 12%;
+  margin-bottom: 4vw;
 
   .jar-overlay {
     width: 12%;
@@ -164,7 +162,7 @@ a {
   width: 80%;
   max-height: 0;
   opacity: 0;
-  margin: 32px auto 0;
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
   overflow: hidden;
@@ -184,7 +182,11 @@ a {
   .jar-navigation-title {
     text-align: center;
     text-transform: uppercase;
-    font: 900 $TITLE-SIZE $FONT-TITLE;
+    font: 900 $TITLE-SIZE-MOBILE $FONT-TITLE;
+
+    @include media-query(DESKTOP) {
+      font-size: $TITLE-SIZE;
+    }
   }
 }
 
@@ -210,11 +212,89 @@ a {
     }
   }
 }
+.list-item:last-child {
+  margin-bottom: 0;
+}
 
 .content-mapa, .content-ingredientes, .content-receita {
   max-height: 0;
   overflow: hidden;
   transition: max-height $TRANSITION-PERIOD-HOME linear;
+}
+
+.home-section {
+  width: 100%;
+  border-top: 1px #000 dashed;
+}
+
+.home-section-image {
+  width: 100%;
+  padding-bottom: 50%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.home-map-image {
+  background-image: url('{{ site.baseurl }}/media/icons/mapa.svg');
+}
+
+.recipe-search-button-container {
+  margin: 12px 0;
+}
+
+.recipe-search-button-group {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: 10px 0;
+}
+
+.recipe-search-button {
+  background-color: #fff;
+  color: #000;
+  padding: 8px 16px;
+  border: 1px #000 solid;
+  margin-right: 10px;
+  border-radius: 4px;
+  box-shadow: 2px 2px 2px 0 #444;
+  cursor: pointer;
+  user-select: none;
+  transition: all $TRANSITION-PERIOD linear;
+
+  &:hover {
+    background-color: #eee;
+    box-shadow: 4px 4px 4px 0 #666;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.recipe-search-button-disabled {
+  color: #ccc;
+  border: 1px #ccc solid;
+  box-shadow: none;
+  cursor: auto;
+  pointer-events: none;
+
+  &:hover {
+    background-color: #fff;
+    box-shadow: none;
+  }
+}
+
+.hidden-checkbox:checked + .recipe-search-button {
+  background-color: #000;
+  color: #fff;
+}
+
+.recipe-search-result-item {
+  display: block;
+}
+
+.hidden-checkbox {
+  display: none;
 }
 
 .footer {
@@ -244,7 +324,7 @@ a {
 }
 
 .share-container {
-  margin-top: 35px;
+  margin: 1vw 0;
   .share-icon-container {
     a {
       text-decoration: none;
