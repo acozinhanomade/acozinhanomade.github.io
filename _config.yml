@@ -2,8 +2,8 @@
 title: "Cozinha Nômade"
 
 # URL
-url: ''
-baseurl: '/cozinhanomade'
+url: 'http://acozinhanomade.ml'
+baseurl: ''
 permalink: :title/
 include: ['_pages']
 collections:
