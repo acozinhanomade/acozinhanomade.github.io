@@ -85,7 +85,7 @@ a {
   .home-title {
     border-bottom: 1px #000 dashed;
     margin: $RESPONSIVE-SPACING auto;
-    font: normal 3.5rem $FONT-TITLE;
+    font: normal 2.8rem $FONT-TITLE;
     text-align: center;
 
     @include media-query(DESKTOP) {
