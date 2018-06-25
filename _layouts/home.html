@@ -10,13 +10,16 @@
 
       <div class="home-jar-container" id="jar-menu-anchor">
         {% for p in site.potes %}
+          {% capture image %}{% cycle 'mapa', 'ingredientes', 'mapa', 'ingredientes', 'mapa', 'ingredientes', 'mapa', 'jar' %}{% endcapture %}
+
           <div class="jar-overlay" data-slug="{{ p.slug }}">
-            {% assign groups = 'ingredientes,receita,mapa' | split: ',' %}
-            {% for g in groups %}
-              <div class="jar-item">
-                <img src="{{ site.baseurl }}/media/icons/{{ p.slug }}/{{ g }}.png">
-              </div>
-            {% endfor %}
+            <div class="jar-item">
+              <img src="{{ site.baseurl }}/media/icons/{{ p.slug }}/receita.png">
+            </div>
+
+            <div class="jar-item">
+              <img src="{{ site.baseurl }}/media/icons/{{ p.slug }}/{{ image }}.png">
+            </div>
           </div>
         {% endfor %}
       </div>
