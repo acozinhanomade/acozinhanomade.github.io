@@ -7,6 +7,12 @@ ingredientes:
   manga:
     img: "/media/icons/CIP/manga.png"
     txt: "<a href='//wikipedia.org'>Fruta amarela</a>"
+  abacaxi:
+    img: "/media/icons/CIP/manga.png"
+    txt: "<a href='//wikipedia.org'>Fruta amarela</a>"
+  banana:
+    img: "/media/icons/CIP/manga.png"
+    txt: "<a href='//wikipedia.org'>Fruta amarela</a>"
   hibísco:
     img: "/media/icons/CIP/hibisco.png"
     txt: "Flor vermelha"
@@ -19,6 +25,12 @@ ingredientes:
   repolho:
     img: "/media/icons/CIP/cha.png"
     txt: "EBAAAAAA"
+  leite:
+    img: "/media/icons/CIP/cha.png"
+    txt: "Leite"
+  kefir:
+    img: "/media/icons/CIP/cha.png"
+    txt: "kefir"
   aveia:
     img: "/media/icons/CIP/cha.png"
     txt: "AAAAAAAA"
