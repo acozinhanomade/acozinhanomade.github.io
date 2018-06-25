@@ -7,7 +7,7 @@ categorias:
   - kombucha
 ---
 <div class="content-receita" markdown="1" data-slug="{{ page.slug }}">
-  <div class="content-title">Receita: {{ page.slug }}</div>
+  <div class="content-title">Receita</div>
   Para fazer esse pote:
 
   - coloque
@@ -16,7 +16,7 @@ categorias:
 </div>
 
 <div class="content-mapa" markdown="1" data-slug="{{ page.slug }}">
-  <div class="content-title">Mapa: {{ page.slug }}</div>
+  <div class="content-title">Mapa</div>
   Adicionar uma imagem AQUI.
   
   Adicionar um video aqui TAMBÉM.
