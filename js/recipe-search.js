@@ -16,23 +16,23 @@ window.addEventListener('load', function() {
 
 {% assign allRecipes = site.potes | concat: site.receitas %}
 
-{% for r in allRecipes %}
-  {% if r.layout == 'page' %}
-    recipeUrls['{{ r.title }}'] = '{{ site.baseurl}}{{ r.url }}';
+{% for recipe in allRecipes %}
+  {% if recipe.layout == 'page' %}
+    recipeUrls['{{ recipe.title }}'] = '{{ site.baseurl}}{{ recipe.url }}';
   {% else %}
-    recipeUrls['{{ r.title }}'] = '{{ site.baseurl}}/#/{{ r.slug }}-receita';
+    recipeUrls['{{ recipe.title }}'] = '{{ site.baseurl}}/#/{{ recipe.slug }}-receita';
   {% endif %}
 
   {% for g in groups %}
-    {% for i in r[g] %}
+    {% for i in recipe[g] %}
       if(!('{{ i }}' in ingredients2recipes)) {
         ingredients2recipes['{{ i }}'] = [];
       }
-      if(!('{{ r.title }}' in recipes2ingredients)) {
-        recipes2ingredients['{{ r.title }}'] = [];
+      if(!('{{ recipe.title }}' in recipes2ingredients)) {
+        recipes2ingredients['{{ recipe.title }}'] = [];
       }
-      ingredients2recipes['{{ i }}'].push('{{ r.title }}');
-      recipes2ingredients['{{ r.title }}'].push('{{ i }}');
+      ingredients2recipes['{{ i }}'].push('{{ recipe.title }}');
+      recipes2ingredients['{{ recipe.title }}'].push('{{ i }}');
     {% endfor %}
   {% endfor %}
 {% endfor %}
