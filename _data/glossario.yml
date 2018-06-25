@@ -16,6 +16,12 @@ ingredientes:
   chá:
     img: "/media/icons/CIP/cha.png"
     txt: "Folhas florais"
+  repolho:
+    img: "/media/icons/CIP/cha.png"
+    txt: "EBAAAAAA"
+  aveia:
+    img: "/media/icons/CIP/cha.png"
+    txt: "AAAAAAAA"
 
 categorias:
   cereal:
