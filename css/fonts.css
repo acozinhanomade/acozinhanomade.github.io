@@ -1,0 +1,30 @@
+---
+---
+
+@font-face {
+    font-family: Wunderland;
+    src: url({{ site.baseurl }}/media/fonts/im_wunderland/Im-Wunderland.otf) format("opentype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Wunderland;
+    src: url({{ site.baseurl }}/media/fonts/im_wunderland/Im-Wunderland-Bold.otf) format("opentype");
+    font-style: normal;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Wunderland;
+    src: url({{ site.baseurl }}/media/fonts/im_wunderland/Im-Wunderland-Italic.otf) format("opentype");
+    font-style: italic;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Wunderland;
+    src: url({{ site.baseurl }}/media/fonts/im_wunderland/Im-Wunderland-Bold-Italic.otf) format("opentype");
+    font-style: italic;
+    font-weight: bold;
+}

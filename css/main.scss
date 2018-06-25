@@ -85,18 +85,25 @@ a {
   .home-title {
     border-bottom: 1px #000 dashed;
     margin: $RESPONSIVE-SPACING auto;
-    font: 900 3*$TITLE-SIZE $FONT-TITLE;
+    font: 900 3.5rem $FONT-TITLE;
     text-align: center;
+
+    @include media-query(DESKTOP) {
+      font: 900 8rem $FONT-TITLE;
+      line-height: 1;
+    }
   }
 
   .page-title {
-    font: 900 $TITLE-SIZE $FONT-TITLE;
     color: $MENU-TEXT-COLOR;
     line-height: 1;
     text-align: left;
     text-transform: uppercase;
-    bottom: 16px;
-    right: 0;
+    font: 900 $TITLE-SIZE-MOBILE $FONT-TITLE;
+
+    @include media-query(DESKTOP) {
+      font: 900 $TITLE-SIZE $FONT-TITLE;
+    }
   }
 
   .page-content {
@@ -115,10 +122,6 @@ a {
 }
 
 .home-main-div {
-  .home-title {
-    font: 900 8vw $FONT-TITLE;
-  }
-
   .jar-item {
     width: 100%;
     left: 0;
@@ -126,6 +129,13 @@ a {
     cursor: pointer;
     img {
       width: 100%;
+    }
+  }
+
+  .content-title {
+    font: 900 $TITLE-SIZE-MOBILE $FONT-TITLE;
+    @include media-query(DESKTOP) {
+      font: 900 $TITLE-SIZE $FONT-TITLE;
     }
   }
 }
@@ -193,10 +203,10 @@ a {
   .jar-navigation-title {
     text-align: center;
     text-transform: uppercase;
-    font: 900 $TITLE-SIZE-MOBILE $FONT-TITLE;
+    font: 900 $LINK-SIZE-MOBILE $FONT-TITLE;
 
     @include media-query(DESKTOP) {
-      font-size: $TITLE-SIZE;
+      font: 900 $TITLE-SIZE $FONT-TITLE;
     }
   }
 }
