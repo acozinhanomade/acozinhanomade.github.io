@@ -3,7 +3,7 @@
 
 @font-face {
     font-family: Wunderland;
-    src: url({{ site.baseurl }}/media/fonts/Im-Wunderland/Im-Wunderland.otf) format("opentype");
+    src: url({{ site.baseurl }}/media/fonts/Im-Wunderland/Im-Wunderland-Regular.otf) format("opentype");
     font-style: normal;
     font-weight: normal;
 }

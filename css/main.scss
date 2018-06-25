@@ -85,11 +85,11 @@ a {
   .home-title {
     border-bottom: 1px #000 dashed;
     margin: $RESPONSIVE-SPACING auto;
-    font: 900 3.5rem $FONT-TITLE;
+    font: normal 3.5rem $FONT-TITLE;
     text-align: center;
 
     @include media-query(DESKTOP) {
-      font: 900 8rem $FONT-TITLE;
+      font: normal 7rem $FONT-TITLE;
       line-height: 1;
     }
   }
@@ -133,9 +133,12 @@ a {
   }
 
   .content-title {
-    font: 900 $TITLE-SIZE-MOBILE $FONT-TITLE;
+    padding-left: 2px;
+    text-transform: uppercase;
+
+    font: normal 0.7*$TITLE-SIZE-MOBILE $FONT-TITLE;
     @include media-query(DESKTOP) {
-      font: 900 $TITLE-SIZE $FONT-TITLE;
+      font: normal 0.7*$TITLE-SIZE $FONT-TITLE;
     }
   }
 }
@@ -203,10 +206,10 @@ a {
   .jar-navigation-title {
     text-align: center;
     text-transform: uppercase;
-    font: 900 $LINK-SIZE-MOBILE $FONT-TITLE;
+    font: normal $LINK-SIZE-MOBILE $FONT-TITLE;
 
     @include media-query(DESKTOP) {
-      font: 900 $TITLE-SIZE $FONT-TITLE;
+      font: normal $TITLE-SIZE $FONT-TITLE;
     }
   }
 }
