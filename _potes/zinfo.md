@@ -63,6 +63,9 @@ Você sabia que 75% do nosso sistema imunológico está alojado no nosso sistema
 O termo **PRObiótico** deriva do grego e significa "pró-vida" 
 Os probióticos são considerados um suplemento alimentar, ricos em microorganismos vivos que afetam de forma positiva a saúde, promovendo o equilíbrio da flora intestinal.  
 Alguns microorganismos reconhecidos como probióticos: bactérias ácido-lácticas, bactérias não ácido lácticas e leveduras. As mais conhecidas que exercem essas funções no organismo são as Bifidobacterium e Lactobacillus.
+
+**ONDE ESTÃO OS PROBIÓTICOS?**
+Conservas de vegetais lactofermentadas, chucrute, kimchi, dosas, queijos curados, pães de fermentação natural, kefir, rejuvelac, iogurtes, kombuchá, aluá, missô etc.
 </div>
 
 <div class="content-mapa" markdown="1" data-slug="{{ page.slug }}">

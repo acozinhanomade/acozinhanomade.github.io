@@ -1,23 +1,30 @@
 ---
 title: Kombucha
 ingredientes:
-  - manga
-  - limão
+  - chá
+  - hibísco
 categorias:
   - kombucha
 ---
 <div class="content-receita" markdown="1" data-slug="{{ page.slug }}">
-  <div class="content-title">Receita</div>
-  Para fazer esse pote:
+<div class="content-title">Kombucha</div>
+**Ingredientes (para 2 litros de chá):**
+- 1 col. de sopa de chá verde/preto/hibísco
+- 125g açúcar
+- 250ml de kombucha "antiga"
 
-  - coloque
-  - tire
-  - mexa
+**Modo de fazer:**  
+- Ferver 2 litros de água
+- Colocar o chá para infusão por 10 minutos
+- Coar
+- Acrescentar o açúcar e mexer até dissolver
+- Esperar esfriar para colocar o scoby
+- Acrescentar os 250ml de kombucha antiga
+- Deixar fermentar por 5 - 7 dias e refazer o mesmo processo sempre deixando 250ml da solução anterior.
 </div>
 
 <div class="content-mapa" markdown="1" data-slug="{{ page.slug }}">
-  <div class="content-title">Mapa</div>
-  Adicionar uma imagem AQUI.
-  
-  Adicionar um video aqui TAMBÉM.
+<div class="content-title">Mapa</div>
+Adicionar uma imagem AQUI.  
+Adicionar um video aqui TAMBÉM.
 </div>

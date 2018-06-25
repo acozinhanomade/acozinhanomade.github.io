@@ -34,8 +34,7 @@ Crie um ritmo. Antes de esgotar o kraut antigo, faça um novo e misture o antigo
 </div>
 
 <div class="content-mapa" markdown="1" data-slug="{{ page.slug }}">
-  <div class="content-title">Mapa</div>
-  Adicionar uma imagem AQUI.
-  
-  Adicionar um video aqui TAMBÉM.
+<div class="content-title">Mapa</div>
+Adicionar uma imagem AQUI.  
+Adicionar um video aqui TAMBÉM.
 </div>
