@@ -4,44 +4,50 @@ processos:
     txt: "Forma de fermentar coisas que vem do leite"
 
 ingredientes:
-  manga:
-    img: "/media/icons/CIP/manga.png"
-    txt: "<a href='//wikipedia.org'>Fruta amarela</a>"
   abacaxi:
     img: "/media/icons/CIP/manga.png"
     txt: "<a href='//wikipedia.org'>Fruta amarela</a>"
-  banana:
-    img: "/media/icons/CIP/manga.png"
-    txt: "<a href='//wikipedia.org'>Fruta amarela</a>"
-  hibísco:
-    img: "/media/icons/CIP/hibisco.png"
-    txt: "Flor vermelha"
-  limão:
-    img: "/media/icons/CIP/limao.png"
-    txt: "Fruta cítrica"
-  chá:
-    img: "/media/icons/CIP/cha.png"
-    txt: "Folhas florais"
-  repolho:
-    img: "/media/icons/CIP/cha.png"
-    txt: "EBAAAAAA"
-  leite:
-    img: "/media/icons/CIP/cha.png"
-    txt: "Leite"
-  kefir:
-    img: "/media/icons/CIP/cha.png"
-    txt: "kefir"
   aveia:
     img: "/media/icons/CIP/cha.png"
     txt: "AAAAAAAA"
+  banana:
+    img: "/media/icons/CIP/manga.png"
+    txt: "<a href='//wikipedia.org'>Fruta amarela</a>"
+  chá:
+    img: "/media/icons/CIP/cha.png"
+    txt: "Folhas florais"
+  hibísco:
+    img: "/media/icons/CIP/hibisco.png"
+    txt: "Flor vermelha"
+  kefir:
+    img: "/media/icons/CIP/cha.png"
+    txt: "kefir"
+  leite:
+    img: "/media/icons/CIP/cha.png"
+    txt: "Leite"
+  repolho:
+    img: "/media/icons/CIP/cha.png"
+    txt: "EBAAAAAA"
 
 categorias:
   cereal:
     img: "/media/icons/CIP/cereal.png"
     txt: "Grãos e etc"
+  conservas:
+    img: "/media/icons/CIP/cereal.png"
+    txt: "Coisas"
   fruta:
     img: "/media/icons/CIP/fruta.png"
     txt: "Coisas gostosas"
+  kombucha:
+    img: "/media/icons/CIP/leguminosas.png"
+    txt: "Coisa com scoby"
+  lácteos:
+    img: "/media/icons/CIP/leguminosas.png"
+    txt: "Leites"
   leguminosa:
     img: "/media/icons/CIP/leguminosas.png"
     txt: "Plantas com sementes cobertas"
+  vinagre:
+    img: "/media/icons/CIP/leguminosas.png"
+    txt: "Azedo"
