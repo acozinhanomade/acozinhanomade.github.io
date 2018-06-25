@@ -4,7 +4,7 @@ ingredientes:
   - leite
   - kefir
 categorias:
-  - lacteos
+  - lácteos
 ---
 <div class="content-receita" markdown="1" data-slug="{{ page.slug }}">
 <div class="content-title">Kefir</div>
