@@ -1,5 +1,5 @@
 ---
 layout: home
-title: "Cozinha Nômade"
+title: "a COZINHA NÔMADE"
 permalink: /
 ---
