@@ -25,6 +25,9 @@ ingredientes:
   leite:
     img: "/media/icons/CIP/cha.png"
     txt: "Leite"
+  lentilha:
+    img: "/media/icons/CIP/cha.png"
+    txt: "Lentes"
   repolho:
     img: "/media/icons/CIP/cha.png"
     txt: "EBAAAAAA"
