@@ -1,8 +1,3 @@
-processos:
-  fermentação láctea:
-    img: "/media/icons/CIP/fermentacao_lactea.png"
-    txt: "Forma de fermentar coisas que vem do leite"
-
 ingredientes:
   abacaxi:
     img: "/media/icons/CIP/manga.png"
