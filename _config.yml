@@ -7,7 +7,11 @@ baseurl: ''
 permalink: :title/
 include: ['_pages']
 collections:
-  - potes
+  potes:
+    output: false
+  receitas:
+    output: true
+    permalink: /:collection/:name/
 
 # Build settings
 markdown: kramdown
@@ -20,6 +24,12 @@ defaults:
     scope:
       path: "_pages"
       type: "pages"
+    values:
+      layout: "page"
+  -
+    scope:
+      path: "_receitas"
+      type: "receitas"
     values:
       layout: "page"
 

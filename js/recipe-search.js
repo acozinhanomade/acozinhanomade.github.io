@@ -13,19 +13,26 @@ window.addEventListener('load', function() {
 });
 
 {% assign groups = 'processos,categorias,ingredientes' | split: ',' %}
-  
-{% for p in site.potes %}
-  recipeUrls['{{ p.title }}'] = '{{ site.baseurl}}/#/{{ p.slug }}-receita';
+
+{% assign allRecipes = site.potes | concat: site.receitas %}
+
+{% for r in allRecipes %}
+  {% if r.layout == 'page' %}
+    recipeUrls['{{ r.title }}'] = '{{ site.baseurl}}{{ r.url }}';
+  {% else %}
+    recipeUrls['{{ r.title }}'] = '{{ site.baseurl}}/#/{{ r.slug }}-receita';
+  {% endif %}
+
   {% for g in groups %}
-    {% for i in p[g] %}
+    {% for i in r[g] %}
       if(!('{{ i }}' in ingredients2recipes)) {
         ingredients2recipes['{{ i }}'] = [];
       }
-      if(!('{{ p.title }}' in recipes2ingredients)) {
-        recipes2ingredients['{{ p.title }}'] = [];
+      if(!('{{ r.title }}' in recipes2ingredients)) {
+        recipes2ingredients['{{ r.title }}'] = [];
       }
-      ingredients2recipes['{{ i }}'].push('{{ p.title }}');
-      recipes2ingredients['{{ p.title }}'].push('{{ i }}');
+      ingredients2recipes['{{ i }}'].push('{{ r.title }}');
+      recipes2ingredients['{{ r.title }}'].push('{{ i }}');
     {% endfor %}
   {% endfor %}
 {% endfor %}

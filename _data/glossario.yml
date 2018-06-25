@@ -18,9 +18,12 @@ ingredientes:
     txt: "Folhas florais"
 
 categorias:
-  leguminosa:
-    img: "/media/icons/CIP/leguminosas.png"
-    txt: "Plantas com sementes cobertas"
   cereal:
     img: "/media/icons/CIP/cereal.png"
     txt: "Grãos e etc"
+  fruta:
+    img: "/media/icons/CIP/fruta.png"
+    txt: "Coisas gostosas"
+  leguminosa:
+    img: "/media/icons/CIP/leguminosas.png"
+    txt: "Plantas com sementes cobertas"
