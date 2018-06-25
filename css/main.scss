@@ -133,16 +133,26 @@ a {
 .home-jar-container{
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   width: 100%;
-  padding-bottom: 12%;
-  margin-bottom: 4vw;
+
+  @include media-query(DESKTOP) {
+    flex-wrap: nowrap;
+  }
 
   .jar-overlay {
-    width: 12%;
+    width: 24%;
+    padding-bottom: 24%;
+    margin-bottom: 4vw;
     position: relative;
     opacity: 1;
     transition: opacity $TRANSITION-PERIOD-ICON linear;
+
+    @include media-query(DESKTOP) {
+      width: 12%;
+      padding-bottom: 12%;
+    }
 
     &:hover {
       opacity: 0.5;
@@ -165,6 +175,7 @@ a {
   margin: 0 auto;
   display: flex;
   flex-direction: row;
+  justify-content: center;
   overflow: hidden;
   transition: max-height $TRANSITION-PERIOD-HOME linear, opacity $TRANSITION-PERIOD-HOME $TRANSITION-PERIOD-HOME linear;
 
