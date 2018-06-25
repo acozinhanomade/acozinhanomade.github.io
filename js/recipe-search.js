@@ -73,11 +73,14 @@ function getRecipes() {
   }
 
   for(let i=0; i<recipeIntersection.length; i++) {
-    let div = document.createElement('a');
-    div.classList.add('recipe-search-result-item');
-    div.setAttribute('href', recipeUrls[recipeIntersection[i]]);
-    div.innerHTML = recipeIntersection[i];
-    recipeResults.appendChild(div);
+    let link = document.createElement('a');
+    link.classList.add('recipe-search-result-item');
+    link.setAttribute('href', recipeUrls[recipeIntersection[i]]);
+    link.innerHTML = recipeIntersection[i];
+    link.onclick = function() {
+      setTimeout(parseUrl, 200);
+    }
+    recipeResults.appendChild(link);
   }
 
   return recipeIntersection;
