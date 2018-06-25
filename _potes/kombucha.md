@@ -8,7 +8,8 @@ categorias:
 ---
 <div class="content-receita" markdown="1" data-slug="{{ page.slug }}">
 <div class="content-title">Kombucha</div>
-**Ingredientes (para 2 litros de chá):**
+**Ingredientes:**
+- 2 litros de água
 - 1 col. de sopa de chá verde/preto/hibísco
 - 125g açúcar
 - 250ml de kombucha "antiga"
