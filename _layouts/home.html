@@ -10,10 +10,16 @@
 
       <div class="home-jar-container" id="jar-menu-anchor">
         {% for p in site.potes %}
-          {% capture image %}{% cycle 'ingredientes', 'ingredientes', 'ingredientes', 'ingredientes', 'ingredientes', 'ingredientes', 'ingredientes', 'jar' %}{% endcapture %}
+
+          {% assign smalljarclass = 'jar-item-small' %}
+          {% assign image = 'ingredientes' %}
+          {% if forloop.last %}
+            {% assign smalljarclass = '' %}
+            {% assign image = 'jar' %}
+          {% endif %}
 
           <div class="jar-overlay" data-slug="{{ p.slug }}">
-            <div class="jar-item">
+            <div class="jar-item {{ smalljarclass }}">
               <img src="{{ site.baseurl }}/media/icons/{{ p.slug }}/{{ image }}.png">
             </div>
             
