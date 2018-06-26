@@ -11,15 +11,13 @@
       <div class="home-jar-container" id="jar-menu-anchor">
         {% for p in site.potes %}
 
-          {% assign smalljarclass = 'jar-item-small' %}
           {% assign image = 'ingredientes' %}
           {% if forloop.last %}
-            {% assign smalljarclass = '' %}
             {% assign image = 'jar' %}
           {% endif %}
 
           <div class="jar-overlay" data-slug="{{ p.slug }}">
-            <div class="jar-item {{ smalljarclass }}">
+            <div class="jar-item">
               <img src="{{ site.baseurl }}/media/icons/{{ p.slug }}/{{ image }}.png">
             </div>
             
@@ -56,18 +54,14 @@
       <div class="home-map-container home-section">
         <div class="home-map-image home-section-image"></div>
         <div class="home-umap-image home-section-image">
-<<<<<<< HEAD
-            <iframe width="100%" height="300px" frameBorder="0" src="http://umap.openstreetmap.fr/en/map/cozinha-nomade-serrinha-do-alambari_229503?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&allowEdit=false&moreControl=false&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=false&onLoadPanel=undefined&captionBar=false"></iframe><p><a href="http://umap.openstreetmap.fr/en/map/cozinha-nomade-serrinha-do-alambari_229503"></a></p>
-=======
           <iframe width="100%" height="300px" frameBorder="0" src="https://umap.openstreetmap.fr/en/map/cozinha-nomade-serrinha-do-alambari_229503?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&allowEdit=false&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=undefined&captionBar=false"></iframe>
->>>>>>> a1f5e780e2ca922f1d7133309c90d3330d581883
         </div>
       </div>
 
       <div class="recipe-search-container home-section">
         <div>Receitas</div>
         <div class="recipe-search-button-container">
-          {% assign groups = 'processos,categorias,ingredientes' | split: ',' %}
+          {% assign groups = 'categorias,ingredientes' | split: ',' %}
           {% for g in groups %}
             <div class="recipe-search-button-group">
               {% for item in site.data.glossario[g] %}

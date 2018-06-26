@@ -12,7 +12,7 @@ window.addEventListener('load', function() {
   disableButtons();
 });
 
-{% assign groups = 'processos,categorias,ingredientes' | split: ',' %}
+{% assign groups = 'categorias,ingredientes' | split: ',' %}
 
 {% assign allRecipes = site.potes | concat: site.receitas %}
 

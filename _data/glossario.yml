@@ -27,7 +27,7 @@ ingredientes:
     img: "/media/icons/CIP/leite.png"
     txt: "Leite"
   lentilha:
-    img: "/media/icons/CIP/lentilha.png"
+    img: "/media/icons/CIP/feijao.png"
     txt: "Lentes"
   manga:
     img: "/media/icons/CIP/manga.png"
@@ -39,6 +39,8 @@ ingredientes:
 categorias:
   cereais:
     txt: "Cereais"
+  conservas:
+    txt: "Conservas"
   fruta:
     txt: "Coisas gostosas"
   kombucha:
@@ -47,3 +49,5 @@ categorias:
     txt: "Lácteos"
   leguminosas:
     txt: "Plantas com sementes cobertas"
+  vinagre:
+    txt: "Amargura total"
