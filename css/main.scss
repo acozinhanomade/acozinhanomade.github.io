@@ -253,20 +253,24 @@ a {
 
 .home-section-image {
   width: 100%;
-  padding-bottom: 50%;
+  padding-bottom: 0;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
 }
 
+.home-map-container {
+  display: flex;
+  flex-direction: row;
+}
+
 .home-map-image {
   width: 50%;
-  background-image: url('{{ site.baseurl }}/media/icons/mapa.svg');
+  background-image: url('{{ site.baseurl }}/media/icons/mapa.png');
 }
 
 .home-umap-image {
   width: 50%;
-  background-image: url('{{ site.baseurl }}/media/icons/mapa.svg');
 }
 
 .recipe-search-button-container {
