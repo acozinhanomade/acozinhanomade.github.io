@@ -1,7 +1,7 @@
 ---
 title: Informações
 slug: info
-swipebox: 8.
+swipebox: 8
 ---
 
 <div class="content-ingredientes" markdown="1" data-slug="{{ page.slug }}">
