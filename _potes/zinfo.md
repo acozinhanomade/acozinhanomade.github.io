@@ -1,7 +1,9 @@
 ---
 title: Informações
 slug: info
+swipebox: 8.
 ---
+
 <div class="content-ingredientes" markdown="1" data-slug="{{ page.slug }}">
 <div class="content-title">Referências</div>
 - Enders, Giulia: O Discreto Charme do Intestino

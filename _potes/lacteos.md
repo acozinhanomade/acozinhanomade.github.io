@@ -46,7 +46,6 @@ A diferença do kefir de leite para o kefir de água é que o kefir de leite pre
 </div>
 
 <div class="content-mapa" markdown="1" data-slug="{{ page.slug }}">
-<div class="content-title">Mapa</div>
-Adicionar uma imagem AQUI.  
-Adicionar um video aqui TAMBÉM.
+<div class="content-title">Lacteos</div>
+![](/media/micro/lacteos.jpg)
 </div>

@@ -37,5 +37,4 @@ O sal retira a água do repolho, puxando para fora, através de um processo cham
 <div class="content-mapa" markdown="1" data-slug="{{ page.slug }}">
 <div class="content-title">Mapa</div>
 Adicionar uma imagem AQUI.  
-Adicionar um video aqui TAMBÉM.
 </div>

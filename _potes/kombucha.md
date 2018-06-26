@@ -25,7 +25,10 @@ categorias:
 </div>
 
 <div class="content-mapa" markdown="1" data-slug="{{ page.slug }}">
-<div class="content-title">Mapa</div>
-Adicionar uma imagem AQUI.  
-Adicionar um video aqui TAMBÉM.
+<div class="content-title">Microscópio</div>
+![](/media/micro/kombucha.jpg)
+![](/media/micro/kombucha1.jpg)
+![](/media/micro/kombucha2.jpg)
+![](/media/micro/kombucha3.jpg)
+![](/media/micro/kombucha4.jpg)
 </div>

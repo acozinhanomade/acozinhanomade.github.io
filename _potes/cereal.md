@@ -31,5 +31,4 @@ A aveia fermentada pode ser preparada como um creme/mingau ou panqueca:
 <div class="content-mapa" markdown="1" data-slug="{{ page.slug }}">
 <div class="content-title">Mapa</div>
 Adicionar uma imagem AQUI.  
-Adicionar um video aqui TAMBÉM.
 </div>
