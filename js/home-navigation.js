@@ -137,7 +137,7 @@ function showContent(slug, type) {
     let allSlugs = document.querySelectorAll('[data-slug="' + slug + '"]');
     for(let i=0; i<allSlugs.length; i++) {
       if(allSlugs[i].classList.contains('content-' + type)) {
-        allSlugs[i].style.maxHeight = '5000px';
+        allSlugs[i].style.maxHeight = '50000px';
         setTimeout(function() {
           scrollToId('#jar-submenu-anchor');
         }, 500);
