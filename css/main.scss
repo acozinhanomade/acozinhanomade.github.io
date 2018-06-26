@@ -260,6 +260,12 @@ a {
 }
 
 .home-map-image {
+  width: 50%;
+  background-image: url('{{ site.baseurl }}/media/icons/mapa.svg');
+}
+
+.home-umap-image {
+  width: 50%;
   background-image: url('{{ site.baseurl }}/media/icons/mapa.svg');
 }
 
