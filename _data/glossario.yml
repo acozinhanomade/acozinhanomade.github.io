@@ -1,39 +1,39 @@
 ingredientes:
   abacaxi:
-    img: "/media/icons/CIP/manga.png"
-    txt: "<a href='//wikipedia.org'>Fruta amarela</a>"
+    img: "/media/icons/CIP/abacaxi.png"
+    txt: "<a href='//wikipedia.org'>Abacaxi</a>"
   aveia:
-    img: "/media/icons/CIP/cha.png"
-    txt: "AAAAAAAA"
+    img: "/media/icons/CIP/aveia.png"
+    txt: "Aveia"
   banana:
-    img: "/media/icons/CIP/manga.png"
-    txt: "<a href='//wikipedia.org'>Fruta amarela</a>"
+    img: "/media/icons/CIP/banana.png"
+    txt: "<a href='//wikipedia.org'>Banana</a>"
   chá:
     img: "/media/icons/CIP/cha.png"
-    txt: "Folhas florais"
+    txt: "Chá"
   hibísco:
     img: "/media/icons/CIP/hibisco.png"
-    txt: "Flor vermelha"
+    txt: "Hibisco"
   kefir:
-    img: "/media/icons/CIP/cha.png"
+    img: "/media/icons/CIP/kefir.png"
     txt: "kefir"
   leite:
-    img: "/media/icons/CIP/cha.png"
+    img: "/media/icons/CIP/leite.png"
     txt: "Leite"
   lentilha:
-    img: "/media/icons/CIP/cha.png"
+    img: "/media/icons/CIP/lentilha.png"
     txt: "Lentes"
   repolho:
-    img: "/media/icons/CIP/cha.png"
-    txt: "EBAAAAAA"
+    img: "/media/icons/CIP/repolho.png"
+    txt: "Repolho"
 
 categorias:
   cereal:
     img: "/media/icons/CIP/cereal.png"
-    txt: "Grãos e etc"
+    txt: "Cereal"
   conservas:
-    img: "/media/icons/CIP/cereal.png"
-    txt: "Coisas"
+    img: "/media/icons/CIP/conservas.png"
+    txt: "Conservas"
   fruta:
     img: "/media/icons/CIP/fruta.png"
     txt: "Coisas gostosas"

@@ -10,7 +10,7 @@
 
       <div class="home-jar-container" id="jar-menu-anchor">
         {% for p in site.potes %}
-          {% capture image %}{% cycle 'mapa', 'ingredientes', 'mapa', 'ingredientes', 'mapa', 'ingredientes', 'mapa', 'jar' %}{% endcapture %}
+          {% capture image %}{% cycle 'ingredientes', 'ingredientes', 'ingredientes', 'ingredientes', 'ingredientes', 'ingredientes', 'ingredientes', 'jar' %}{% endcapture %}
 
           <div class="jar-overlay" data-slug="{{ p.slug }}">
             <div class="jar-item">
