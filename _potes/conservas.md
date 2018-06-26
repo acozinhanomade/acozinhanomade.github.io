@@ -2,6 +2,7 @@
 title: Conservas
 ingredientes:
   - repolho
+  - cenoura
 categorias:
   - conservas
 ---

@@ -11,12 +11,18 @@ ingredientes:
   chá:
     img: "/media/icons/CIP/cha.png"
     txt: "Chá"
+  cenoura:
+    img: "/media/icons/CIP/cenoura.png"
+    txt: "Cenoura"
   hibísco:
     img: "/media/icons/CIP/hibisco.png"
     txt: "Hibisco"
   kefir:
     img: "/media/icons/CIP/kefir.png"
     txt: "kefir"
+  limao:
+    img: "/media/icons/CIP/limao.png"
+    txt: "Limao"
   leite:
     img: "/media/icons/CIP/leite.png"
     txt: "Leite"
@@ -31,24 +37,13 @@ ingredientes:
     txt: "Repolho"
 
 categorias:
-  cereal:
-    img: "/media/icons/CIP/cereal.png"
-    txt: "Cereal"
-  conservas:
-    img: "/media/icons/CIP/conservas.png"
-    txt: "Conservas"
+  cereais:
+    txt: "Cereais"
   fruta:
-    img: "/media/icons/CIP/fruta.png"
     txt: "Coisas gostosas"
   kombucha:
-    img: "/media/icons/CIP/leguminosas.png"
-    txt: "Coisa com scoby"
+    txt: "Kombucha"
   lácteos:
-    img: "/media/icons/CIP/lacteos.png"
-    txt: "Leites"
-  leguminosa:
-    img: "/media/icons/CIP/leguminosas.png"
+    txt: "Lácteos"
+  leguminosas:
     txt: "Plantas com sementes cobertas"
-  vinagre:
-    img: "/media/icons/CIP/leguminosas.png"
-    txt: "Azedo"

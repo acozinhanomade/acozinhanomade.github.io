@@ -2,6 +2,8 @@
 title: Fruta
 ingredientes:
   - abacaxi
+  - limao
+  - banana
 categorias:
   - fruta
 ---

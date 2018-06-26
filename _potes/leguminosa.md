@@ -2,8 +2,9 @@
 title: Leguminosa
 ingredientes:
   - lentilha
+  - feijao
 categorias:
-  - leguminosa
+  - leguminosas
 ---
 <div class="content-receita" markdown="1" data-slug="{{ page.slug }}">
 <div class="content-title">Dosas</div>

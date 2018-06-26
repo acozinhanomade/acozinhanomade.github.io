@@ -324,6 +324,10 @@ a {
 }
 
 .recipe-search-result-item {
+  text-align: left;
+  text-transform: uppercase;
+  font: normal $LINK-SIZE-MOBILE*2 $FONT-TITLE;
+  font-weight: bold;
   display: block;
 }
 
