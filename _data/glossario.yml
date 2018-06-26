@@ -23,6 +23,9 @@ ingredientes:
   lentilha:
     img: "/media/icons/CIP/lentilha.png"
     txt: "Lentes"
+  manga:
+    img: "/media/icons/CIP/manga.png"
+    txt: "Mangaaaa"
   repolho:
     img: "/media/icons/CIP/repolho.png"
     txt: "Repolho"
@@ -41,7 +44,7 @@ categorias:
     img: "/media/icons/CIP/leguminosas.png"
     txt: "Coisa com scoby"
   lácteos:
-    img: "/media/icons/CIP/leguminosas.png"
+    img: "/media/icons/CIP/lacteos.png"
     txt: "Leites"
   leguminosa:
     img: "/media/icons/CIP/leguminosas.png"
