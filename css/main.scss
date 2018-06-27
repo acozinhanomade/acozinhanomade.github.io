@@ -43,7 +43,7 @@ a {
   font: normal $TEXT-SIZE $FONT-TEXT;
   color: $LINK-COLOR;
   cursor: pointer;
-  text-decoration: none;
+  text-decoration: underline;
   transition: color $TRANSITION-PERIOD linear;
 
   &:visited {

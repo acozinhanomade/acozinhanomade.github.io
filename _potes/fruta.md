@@ -1,10 +1,10 @@
 ---
 title: Fruta
 ingredientes:
+  - abacaxi
+  - banana
   - jaca
   - limao
-  - banana
-  - abacaxi
 categorias:
   - fruta
 ---
