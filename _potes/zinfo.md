@@ -135,8 +135,4 @@ Conservas de vegetais lactofermentadas, chucrute, kimchi, dosas, queijos curados
 <div class="content-title"></div>
   {% include swipebox.html prefix='mapas' %}
 </div>
-
-
 </div>
-
-
