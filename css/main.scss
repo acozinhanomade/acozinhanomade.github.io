@@ -288,8 +288,8 @@ a {
 .recipe-search-button-group {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
-  margin: 10px 0;
+  flex-wrap: wrap;
+  margin: 16px 0;
 }
 
 .recipe-search-button {
@@ -298,6 +298,7 @@ a {
   padding: 8px 16px;
   border: 1px #000 solid;
   margin-right: 10px;
+  margin-bottom: 10px;
   border-radius: 4px;
   box-shadow: 2px 2px 2px 0 #444;
   cursor: pointer;
