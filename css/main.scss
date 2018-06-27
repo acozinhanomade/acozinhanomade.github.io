@@ -40,11 +40,16 @@ i.fa-1_5x {
 }
 
 a {
-  font: normal $TEXT-SIZE $FONT-TEXT;
+  font: 600 italic $LINK-SIZE-MOBILE $FONT-LINK;
+  line-height: 1;
   color: $LINK-COLOR;
   cursor: pointer;
   text-decoration: underline;
   transition: color $TRANSITION-PERIOD linear;
+
+  @include media-query(DESKTOP) {
+    font-size: $LINK-SIZE;
+  }
 
   &:visited {
     color: $LINK-COLOR-VISITED;
@@ -83,7 +88,6 @@ a {
   margin: $RESPONSIVE-SPACING auto;
 
   .home-title {
-    border-bottom: 1px #000 dashed;
     margin: $RESPONSIVE-SPACING auto;
     font: normal 2.8rem $FONT-TITLE;
     text-align: center;
@@ -143,10 +147,10 @@ a {
   .content-title {
     padding-left: 2px;
     text-transform: uppercase;
+    font: normal $SUBTITLE-SIZE-MOBILE $FONT-TITLE;
 
-    font: normal 0.7*$TITLE-SIZE-MOBILE $FONT-TITLE;
     @include media-query(DESKTOP) {
-      font: normal 0.7*$TITLE-SIZE $FONT-TITLE;
+      font: normal $SUBTITLE-SIZE $FONT-TITLE;
     }
   }
 }
@@ -214,7 +218,7 @@ a {
   .jar-navigation-title {
     text-align: center;
     text-transform: uppercase;
-    font: normal $LINK-SIZE-MOBILE $FONT-TITLE;
+    font: normal $SUBTITLE-SIZE-MOBILE $FONT-TITLE;
 
     @include media-query(DESKTOP) {
       font: normal $TITLE-SIZE $FONT-TITLE;
@@ -261,24 +265,40 @@ a {
 
 .home-section-image {
   width: 100%;
-  padding-bottom: 0;
+  padding-bottom: 66%;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
+
+  @include media-query(DESKTOP) {
+    padding-bottom: 0;
+  }
 }
 
 .home-map-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+
+  @include media-query(DESKTOP) {
+    flex-direction: row;
+  }
 }
 
 .home-map-image {
-  width: 50%;
-  background-image: url('{{ site.baseurl }}/media/icons/mapa.png');
+  width: 100%;
+  background-image: url('{{ site.baseurl }}/media/processo/mapa.jpg');
+
+  @include media-query(DESKTOP) {
+    width: 50%;
+  }
 }
 
 .home-umap-image {
-  width: 50%;
+  width: 100%;
+
+  @include media-query(DESKTOP) {
+    width: 50%;
+  }
 }
 
 .recipe-search-button-container {
@@ -333,10 +353,8 @@ a {
 }
 
 .recipe-search-result-item {
-  text-align: left;
   text-transform: uppercase;
-  font: normal $LINK-SIZE-MOBILE*2 $FONT-TITLE;
-  font-weight: bold;
+  line-height: 1.5;
   display: block;
 }
 
