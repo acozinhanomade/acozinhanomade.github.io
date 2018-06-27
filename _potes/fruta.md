@@ -23,7 +23,6 @@ categorias:
 </div>
 
 <div class="content-mapa" markdown="1" data-slug="{{ page.slug }}">
-<div class="content-title">Mapa</div>
-Adicionar uma imagem AQUI.  
-Adicionar um video aqui TAMBÉM.
+<div class="content-title">Microscópio</div>
+  {% include swipebox.html prefix='micro/fruta' %}
 </div>
