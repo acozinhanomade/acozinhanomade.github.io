@@ -2,9 +2,9 @@ var menuFadeInDelay = 0;
 var contentFadeInDelay = 0;
 
 window.addEventListener('load', function() {
+  setContentHeights();
   setClicks();
   parseUrl();
-  setContentHeights();
 });
 
 function setContentHeights() {
@@ -29,7 +29,11 @@ function parseUrl() {
       pote.click();
     }
     if(content) {
-      setTimeout(function(){content.click()}, 200);
+      setTimeout(function() {
+        showContent(slug, type);
+        location.href = location.href.replace(/-.+/, '') + '-' + type;
+        updateShareUrls();
+      }, 200);
     }
   }
 }

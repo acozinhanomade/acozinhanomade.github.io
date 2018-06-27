@@ -78,6 +78,8 @@ function getRecipes() {
     link.setAttribute('href', recipeUrls[recipeIntersection[i]]);
     link.innerHTML = recipeIntersection[i];
     link.onclick = function() {
+      scrollToId('#jar-submenu-anchor');
+      clearSearchSelections();
       setTimeout(parseUrl, 200);
     }
     recipeResults.appendChild(link);
@@ -111,4 +113,12 @@ function disableButtons() {
       b.classList.add('recipe-search-button-disabled');
     }
   }
+}
+
+function clearSearchSelections() {
+  for(let i=0; i<buttons.length; i++) {
+    let b = buttons[i];
+    document.getElementById(b.getAttribute('for')).checked = false;
+  }
+  disableButtons();
 }
