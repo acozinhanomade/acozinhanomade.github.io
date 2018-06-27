@@ -4,7 +4,18 @@ var contentFadeInDelay = 0;
 window.addEventListener('load', function() {
   setClicks();
   parseUrl();
+  setContentHeights();
 });
+
+function setContentHeights() {
+  let allSlugs = document.querySelectorAll('[data-slug]');
+  for(let i=0; i<allSlugs.length; i++) {
+    if(allSlugs[i].classList.toString().includes('content-')) {
+      allSlugs[i].setAttribute('data-height', allSlugs[i].offsetHeight);
+      allSlugs[i].classList.add('content-measured');
+    }
+  }
+}
 
 function parseUrl() {
   if(location.href.includes('/#/')) {
@@ -100,17 +111,17 @@ function setNavigation(slug) {
 }
 
 function showNavigation() {
-  let navigation = document.getElementsByClassName('home-jar-navigation')[0];
+  let navigation = document.getElementsByClassName('home-jar-submenu')[0];
 
-  navigation.style.opacity = '1';
-  navigation.style['max-height'] = '500px';
+  navigation.classList.remove('submenu-hide');
+  navigation.classList.add('submenu-show');
 
   setTimeout(function() {
     scrollToId('#jar-menu-anchor');
   }, 500);
 
   setTimeout(function() {
-    navigation.style.transition = 'opacity 0.5s linear';
+    navigation.classList.add('submenu-simplify-transition');
   }, 1000);
 
   menuFadeInDelay = 1000;
@@ -118,15 +129,16 @@ function showNavigation() {
 }
 
 function fadeNavigation() {
-  let navigation = document.getElementsByClassName('home-jar-navigation')[0];
-  navigation.style.opacity = '0';
+  let navigation = document.getElementsByClassName('home-jar-submenu')[0];
+  navigation.classList.remove('submenu-show');
+  navigation.classList.add('submenu-hide');
 }
 
 function hideAllContent() {
   let allSlugs = document.querySelectorAll('[data-slug]');
   for(let i=0; i<allSlugs.length; i++) {
     if(allSlugs[i].classList.toString().includes('content-')) {
-      allSlugs[i].style.maxHeight = '0px';
+      allSlugs[i].style['max-height'] = '0';
     }
   }
 }
@@ -137,7 +149,8 @@ function showContent(slug, type) {
     let allSlugs = document.querySelectorAll('[data-slug="' + slug + '"]');
     for(let i=0; i<allSlugs.length; i++) {
       if(allSlugs[i].classList.contains('content-' + type)) {
-        allSlugs[i].style.maxHeight = '50000px';
+        allSlugs[i].style['max-height'] = allSlugs[i].getAttribute('data-height') + 'px';
+
         setTimeout(function() {
           scrollToId('#jar-submenu-anchor');
         }, 500);

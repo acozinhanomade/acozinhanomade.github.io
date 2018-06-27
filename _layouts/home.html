@@ -8,7 +8,7 @@
     <div class="main-div home-main-div">
       <a href="{{ site.baseurl }}/"><div class="home-title">{{ site.title }}</div></a>
 
-      <div class="home-jar-container" id="jar-menu-anchor">
+      <div class="home-jar-menu" id="jar-menu-anchor">
         {% for p in site.potes %}
 
           {% assign image = 'ingredientes' %}
@@ -28,7 +28,7 @@
         {% endfor %}
       </div>
 
-      <div class="home-jar-navigation" id="jar-submenu-anchor">
+      <div class="home-jar-submenu" id="jar-submenu-anchor">
         <div class="jar-item" id="jar-ingredientes">
           <img src="{{ site.baseurl }}/media/icons/kombucha/ingredientes.png">
         </div>

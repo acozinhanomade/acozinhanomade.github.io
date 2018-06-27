@@ -155,7 +155,7 @@ a {
   }
 }
 
-.home-jar-container{
+.home-jar-menu {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -193,7 +193,7 @@ a {
   }
 }
 
-.home-jar-navigation {
+.home-jar-submenu {
   width: 80%;
   max-height: 0;
   opacity: 0;
@@ -225,6 +225,17 @@ a {
     }
   }
 }
+.submenu-hide {
+  opacity: 0;
+  max-height: 500px;
+}
+.submenu-show {
+  opacity: 1;
+  max-height: 500px;
+}
+.submenu-simplify-transition {
+  transition: opacity $TRANSITION-PERIOD-HOME linear;
+}
 
 .list-item {
   display: flex;
@@ -253,9 +264,13 @@ a {
 }
 
 .content-mapa, .content-ingredientes, .content-receita {
-  max-height: 0;
+  opacity: 0;
   overflow: hidden;
-  transition: max-height $TRANSITION-PERIOD-HOME linear;
+  transition: max-height $TRANSITION-PERIOD-HOME ease;
+}
+.content-measured {
+  opacity: 1;
+  max-height: 0;
 }
 
 .home-section {
