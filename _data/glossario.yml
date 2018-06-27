@@ -14,6 +14,9 @@ ingredientes:
   cenoura:
     img: "/media/icons/CIP/cenoura.png"
     txt: "Cenoura"
+  jaca:
+    img: "/media/icons/CIP/jaca.png"
+    txt: "Jaca"
   hibísco:
     img: "/media/icons/CIP/hibisco.png"
     txt: "Hibisco"
@@ -38,16 +41,16 @@ ingredientes:
 
 categorias:
   cereais:
-    txt: "Cereais"
+    txt: "Quaisquer cereais"
   conservas:
     txt: "Conservas"
   fruta:
-    txt: "Coisas gostosas"
+    txt: "Escolher uma das frutas abaixo para essa receita:"
   kombucha:
-    txt: "Kombucha"
+    txt: "Possíveis chá para seu Kombucha:"
   lácteos:
     txt: "Lácteos"
   leguminosas:
     txt: "Plantas com sementes cobertas"
   vinagre:
-    txt: "Amargura total"
+    txt: "Azedume total"
