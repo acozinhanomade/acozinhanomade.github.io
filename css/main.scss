@@ -325,7 +325,7 @@ a {
 }
 
 .recipe-search-title {
-  margin-top: 24px;
+  margin-top: 18px;
   font-size: $LINK-SIZE-MOBILE;
   @include media-query(DESKTOP) {
     font-size: $LINK-SIZE;
