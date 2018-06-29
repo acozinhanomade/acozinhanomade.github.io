@@ -59,22 +59,19 @@
       </div>
 
       <div class="recipe-search-container home-section">
-        <div>Receitas</div>
+        <div class="recipe-search-title">Procurar receitas com:</div>
         <div class="recipe-search-button-container">
-          {% assign groups = 'categorias,ingredientes' | split: ',' %}
-          {% for g in groups %}
-            <div class="recipe-search-button-group">
-              {% for item in site.data.glossario[g] %}
-                <input type="checkbox" class="hidden-checkbox"
-                       id="recipe-search-{{ g }}-{{ forloop.index }}">
-                <label class="recipe-search-button"
-                       for="recipe-search-{{ g }}-{{ forloop.index }}"
-                       data-name="{{ item[0] }}">
-                  {{ item[0] }}
-                </label>
-              {% endfor %}
-            </div>
-          {% endfor %}
+          <div class="recipe-search-button-group">
+            {% for item in site.data.ingredientes %}
+              <input type="checkbox" class="hidden-checkbox"
+                     id="recipe-search-ingredientes-{{ forloop.index }}">
+              <label class="recipe-search-button"
+                     for="recipe-search-ingredientes-{{ forloop.index }}"
+                     data-name="{{ item[0] }}">
+                {{ item[0] }}
+              </label>
+            {% endfor %}
+          </div>
         </div>
         <div class="recipe-search-results">
         </div>

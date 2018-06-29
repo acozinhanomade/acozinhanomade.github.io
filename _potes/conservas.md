@@ -3,8 +3,6 @@ title: Conservas
 ingredientes:
   - repolho
   - cenoura
-categorias:
-  - conservas
 ---
 <div class="content-receita" markdown="1" data-slug="{{ page.slug }}">
 <div class="content-title">Chucrute ou sauerkraut</div>

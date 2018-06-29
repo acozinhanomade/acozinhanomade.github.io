@@ -237,12 +237,20 @@ a {
   transition: opacity $TRANSITION-PERIOD-HOME linear;
 }
 
+.ingredient-list-instructions {
+  margin: 3% 0;
+  font-size: $LINK-SIZE-MOBILE;
+  @include media-query(DESKTOP) {
+    font-size: $LINK-SIZE;
+  }
+}
+
 .list-item {
   display: flex;
   flex-direction: row;
   align-items: center;
   width: 80%;
-  margin: 5% 0;
+  margin-bottom: 5%;
 
   .list-image {
     width: 20%;
@@ -313,6 +321,14 @@ a {
 
   @include media-query(DESKTOP) {
     width: 50%;
+  }
+}
+
+.recipe-search-title {
+  margin-top: 24px;
+  font-size: $LINK-SIZE-MOBILE;
+  @include media-query(DESKTOP) {
+    font-size: $LINK-SIZE;
   }
 }
 

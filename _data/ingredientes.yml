@@ -1,0 +1,39 @@
+abacaxi:
+  img: "/media/icons/CIP/abacaxi.png"
+  txt: "<a href='//wikipedia.org'>Abacaxi</a>"
+aveia:
+  img: "/media/icons/CIP/aveia.png"
+  txt: "Aveia"
+banana:
+  img: "/media/icons/CIP/banana.png"
+  txt: "<a href='//wikipedia.org'>Banana</a>"
+chá:
+  img: "/media/icons/CIP/cha.png"
+  txt: "Chá"
+cenoura:
+  img: "/media/icons/CIP/cenoura.png"
+  txt: "Cenoura"
+jaca:
+  img: "/media/icons/CIP/jaca.png"
+  txt: "Jaca"
+hibísco:
+  img: "/media/icons/CIP/hibisco.png"
+  txt: "Hibisco"
+kefir:
+  img: "/media/icons/CIP/kefir.png"
+  txt: "kefir"
+limao:
+  img: "/media/icons/CIP/limao.png"
+  txt: "Limao"
+leite:
+  img: "/media/icons/CIP/leite.png"
+  txt: "Leite"
+lentilha:
+  img: "/media/icons/CIP/feijao.png"
+  txt: "Lentes"
+manga:
+  img: "/media/icons/CIP/manga.png"
+  txt: "Mangaaaa"
+repolho:
+  img: "/media/icons/CIP/repolho.png"
+  txt: "Repolho"

@@ -2,8 +2,6 @@
 title: Vinagre
 ingredientes:
   - banana
-categorias:
-  - vinagre
 ---
 <div class="content-receita" markdown="1" data-slug="{{ page.slug }}">
 <div class="content-title">Vinagre de Banana</div>

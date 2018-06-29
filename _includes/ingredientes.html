@@ -1,20 +1,18 @@
-{% assign groups = 'categorias,ingredientes' | split: ',' %}
 {% if include.page.ingredientes %}
   <div class="content-title">Ingredientes</div>
+  <div class="ingredient-list-instructions">Essa receita pode ser feita usando:</div>
 {% endif %}
 
-{% for g in groups %}
-{% for item in include.page[g] %}
-{% if site.data.glossario[g][item] %}
+{% for item in include.page.ingredientes %}
+{% if site.data.ingredientes[item] %}
   <div class="list-item">
     <div class="list-image">
-      <img src="{{ site.baseurl }}{{ site.data.glossario[g][item].img }}">
+      <img src="{{ site.baseurl }}{{ site.data.ingredientes[item].img }}">
     </div>
     <div class="list-text">
       <div class="list-text-title">{{ item }}</div>
-      {{ site.data.glossario[g][item].txt }}
+      {{ site.data.ingredientes[item].txt }}
     </div>
   </div>
 {% endif %}
-{% endfor %}
 {% endfor %}

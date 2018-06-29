@@ -12,8 +12,6 @@ window.addEventListener('load', function() {
   disableButtons();
 });
 
-{% assign groups = 'categorias,ingredientes' | split: ',' %}
-
 {% assign allRecipes = site.potes | concat: site.receitas %}
 
 {% for recipe in allRecipes %}
@@ -23,17 +21,15 @@ window.addEventListener('load', function() {
     recipeUrls['{{ recipe.title }}'] = '{{ site.baseurl}}/#/{{ recipe.slug }}-receita';
   {% endif %}
 
-  {% for g in groups %}
-    {% for i in recipe[g] %}
-      if(!('{{ i }}' in ingredients2recipes)) {
-        ingredients2recipes['{{ i }}'] = [];
-      }
-      if(!('{{ recipe.title }}' in recipes2ingredients)) {
-        recipes2ingredients['{{ recipe.title }}'] = [];
-      }
-      ingredients2recipes['{{ i }}'].push('{{ recipe.title }}');
-      recipes2ingredients['{{ recipe.title }}'].push('{{ i }}');
-    {% endfor %}
+  {% for i in recipe.ingredientes %}
+    if(!('{{ i }}' in ingredients2recipes)) {
+      ingredients2recipes['{{ i }}'] = [];
+    }
+    if(!('{{ recipe.title }}' in recipes2ingredients)) {
+      recipes2ingredients['{{ recipe.title }}'] = [];
+    }
+    ingredients2recipes['{{ i }}'].push('{{ recipe.title }}');
+    recipes2ingredients['{{ recipe.title }}'].push('{{ i }}');
   {% endfor %}
 {% endfor %}
 

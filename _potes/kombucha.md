@@ -3,8 +3,6 @@ title: Kombucha
 ingredientes:
   - chá
   - hibísco
-categorias:
-  - kombucha
 ---
 <div class="content-receita" markdown="1" data-slug="{{ page.slug }}">
 <div class="content-title">Kombucha</div>

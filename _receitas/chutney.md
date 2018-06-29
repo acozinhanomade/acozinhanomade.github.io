@@ -2,8 +2,6 @@
 title: Chutney de Manga
 ingredientes:
   - manga
-categorias:
-  - fruta
 ---
 Para fazer esse chutney:
 

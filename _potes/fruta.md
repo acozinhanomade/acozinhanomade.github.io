@@ -5,8 +5,6 @@ ingredientes:
   - banana
   - jaca
   - limao
-categorias:
-  - fruta
 ---
 <div class="content-receita" markdown="1" data-slug="{{ page.slug }}">
 <div class="content-title">Tepache ou Aluá</div>
