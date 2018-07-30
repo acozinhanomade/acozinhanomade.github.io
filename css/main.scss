@@ -14,6 +14,7 @@ body {
   padding: 0;
   width: 100%;
   background-color: $BACKGROUND;
+  box-sizing: border-box;
 
   font: normal $TEXT-SIZE-MOBILE $FONT-TEXT;
   color: $TEXT-COLOR;
@@ -78,6 +79,41 @@ a {
 
   &:hover {
     color: $MENU-TEXT-HOVER-COLOR;
+  }
+}
+
+@keyframes spin {
+  from {transform:rotate(0deg);}
+  to {transform:rotate(360deg);}
+}
+
+.home-loading {
+  width: 100%;
+  height: 100vh;
+  z-index: 100;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  opacity: 1;
+  transition: opacity $TRANSITION-PERIOD-ICON linear, z-index $TRANSITION-PERIOD-ICON linear;
+
+  .home-loading-image {
+    width: 20%;
+    margin: 16% auto 0;
+    padding-bottom: 20%;
+    background-image: url('{{ site.baseurl }}/media/icons/cereal/receita.png');
+    background-position: center center;
+    background-size: contain;
+    animation: spin 4s infinite ease;
+  }
+
+  .home-loading-text {
+    width: 100%;
+    margin: 8% auto 0;
+    text-align: center;
+    font-size: $SUBTITLE-SIZE;
   }
 }
 

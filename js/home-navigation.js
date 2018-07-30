@@ -15,6 +15,13 @@ function setContentHeights() {
       allSlugs[i].classList.add('content-measured');
     }
   }
+  clearLoading();
+}
+
+function clearLoading() {
+  let loadingDiv = document.getElementsByClassName('home-loading')[0];
+  loadingDiv.style.opacity = '0';
+  loadingDiv.style['z-index'] = '-1';
 }
 
 function parseUrl() {
