@@ -8,7 +8,7 @@ ingredientes:
 <div class="content-title">Kombucha</div>
 **Ingredientes:**
 - 2 litros de água
-- 1 col. de sopa de chá verde/preto/hibísco
+- 10g de chá verde/preto/hibísco
 - 125g açúcar
 - 250ml de kombucha "antiga"
 
