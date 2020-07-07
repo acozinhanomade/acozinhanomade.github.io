@@ -5,14 +5,14 @@ slug: info
 
 <div class="content-ingredientes" markdown="1" data-slug="{{ page.slug }}">
 <div class="content-title">Referências</div>
-- [Enders, Giulia: O Discreto Charme do Intestino](/media/docs/odiscretocharmedointestino.pdf){:target="_blank"}
+- Enders, Giulia: O Discreto Charme do Intestino
 - Katz, Sandor Ellix: Wild Fermentation
 - Katz, Sandor Ellix: The Art of Fermentation
 - Pollan, Michael: Cozinhar
-- [Cadernos de Subjetividade](/media/docs/cadernodesubjetividade.pdf){:target="_blank"}
-- [Petrini, Carlo: Comida e Liberdade](/media/docs/comidaliberta.pdf){:target="_blank"}
-- [Pelbart, Peter pal: O Avesso do Niilismo](/media/docs/oavessodoniilismo.pdf){:target="_blank"}
-- [Nery, Djalma: Uma Alternativa para a Sociedade](/media/docs/umaalternativaparaasociedade.pdf){:target="_blank"}
+- Cadernos de Subjetividade
+- Petrini, Carlo: Comida e Liberdade
+- Pelbart, Peter pal: O Avesso do Niilismo
+- Nery, Djalma: Uma Alternativa para a Sociedade
 </div>
 
 <div class="content-receita" markdown="1" data-slug="{{ page.slug }}">
